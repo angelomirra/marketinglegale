@@ -174,16 +174,46 @@
             h1 { font-size: 2rem; }
             h2 { font-size: 1.8rem; }
             .guide-section { flex-direction: column; text-align: center; }
+            .hero .container div { /* Selettore per il div flessibile */
+                text-align: center; /* Centra tutto su mobile */
+            }
+            .hero .container div p.subtitle {
+                text-align: center; /* Centra anche il sottotitolo */
+            }
         }
     </style>
 </head>
 <body>
 
-    <header class="hero">
+    <!-- NUOVO HEADER IN STILE "ESPERTO IN PRIMO PIANO" -->
+    <header class="hero" style="padding: 60px 0;">
         <div class="container">
-            <h1>Avvocato? Scopri Come Trovare Nuovi Clienti Online</h1>
-            <p class="subtitle">Basta affidarsi solo al passaparola. Scarica la guida gratuita per attrarre contatti qualificati tramite il web, nel pieno rispetto del codice deontologico.</p>
-            <a href="#download-form" class="cta-button">SCARICA LA GUIDA GRATUITA</a>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; text-align: left;">
+                
+
+
+                <!-- Colonna Testo -->
+                <div style="max-width: 600px;">
+                    <h1 style="color: var(--light-color);">Avvocato? Scopri Come Trovare Nuovi Clienti Online</h1>
+                    <p class="subtitle" style="text-align: left; margin: 1rem 0 2rem 0;">
+                        Basta affidarsi solo al passaparola. Scarica la mia guida gratuita per attrarre contatti qualificati tramite il web, nel pieno rispetto del codice deontologico.
+                    </p>
+                    <a href="#download-form" class="cta-button">SCARICA LA GUIDA GRATUITA</a>
+                </div>
+
+                <!-- Colonna Foto -->
+                <div style="text-align: center;">
+                    <img
+                        src="https://media.istockphoto.com/id/1297832726/photo/portrait-of-a-smiling-young-businessman.jpg?s=612x612&w=0&k=20&c=32Qg7TnqfGkrDwTL3q0X0Kx9ab3JDzuqxzp4poH39zc="
+                        alt="Angelo Mirra, Specialista Marketing Legale"
+                        style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; border: 5px solid #d4af37;"
+                    >
+                    <p style="margin-top: 8px; font-style: italic; color: #ffffff; opacity: 0.9;">
+                        Angelo Mirra - Specialista Marketing Legale
+                    </p>
+                </div>
+
+            </div>
         </div>
     </header>
 
@@ -234,12 +264,25 @@
                 </div>
             </div>
         </section>
+
+        <!-- Aggiungi questa nuova sezione prima del footer -->
+        <section class="section">
+            <div class="container" style="max-width: 800px; text-align: center; display: flex; align-items: center; gap: 30px;">
+                <div>
+                    <h3 style="text-align: left; margin-bottom: 10px; font-size: 1.4rem;">Una guida creata da un vero specialista</h3>
+                    <p style="text-align: left; margin-bottom: 0;">
+                        "Sono Angelo Mirra e da anni aiuto avvocati e studi legali a navigare il mondo digitale. Ho creato questa guida per darti strategie pratiche e conformi alla deontologia, evitando gli errori che vedo commettere ogni giorno. Il mio obiettivo è semplice: darti gli strumenti per ottenere i risultati che meriti."
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
     
     <footer>
         <div class="container">
-            <p>&copy; 2024 [Il Tuo Nome] | Specialista Marketing per il Settore Legale</p>
-            <p>P.IVA [La Tua Partita IVA] | <a href="#">Privacy Policy</a></p>
+            <p>&copy; 2024 Angelo Mirra | Specialista Marketing per il Settore Legale</p>
+            <p>P.IVA 04255584638 | <a href="#">Privacy Policy</a></p>
         </div>
     </footer>
 
